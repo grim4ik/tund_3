@@ -23,8 +23,8 @@
     
 	//kord kõige algus $i = 0
 	// SISU iga kord $i <$
-	//
-	for ($i = 1; $i > $age; $i = $i + 1 )		{
+	
+	for ($i = 1; $i <= $age; $i = $i + 1 )		{
 		
 		echo $i. "palju ";
 		

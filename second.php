@@ -39,6 +39,6 @@
 
 <?php
      
-	 echo date("d.m.Y / G.i.s / D");
+	 echo date("d.m.Y / G:i:s / l");
 
 ?>

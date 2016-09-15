@@ -25,14 +25,17 @@
 	
 			$singupPasswordError = "*";
 
-	
 	if (isset($_POST["singupPassword"])) {
-		
-
+	
 		if (empty($_POST["sinupPassword"])) {
 
-		
 			$singupPasswordError = "*Väli on kosustuslik";
+		} else {
+			// parool ei olnud tühi
+			if ( strlen($_POST["singupPassword"]) < 8 )  {
+				
+				$singupPasswordError = "* Parool peab olema vähemalt 8 tähemärkki pikk!";
+			}
 		}
 	}
 	
